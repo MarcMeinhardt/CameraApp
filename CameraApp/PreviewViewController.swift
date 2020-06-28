@@ -28,6 +28,8 @@ class PreviewViewController: UIViewController {
     
     @IBAction func saveButton(_ sender: UIButton) {
         print("save button pressed")
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        dismiss(animated: true, completion: nil)
     }
     
 
